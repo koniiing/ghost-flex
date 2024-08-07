@@ -2,17 +2,20 @@
 const parent = document.querySelector('.view-container');
 const children = parent.querySelectorAll('.item')
 const quiz = document.querySelector('.quiz-container .code-container');
-const hints = document.querySelectorAll('.hint-code');
+const hints = document.querySelectorAll('.hint-code'); 
 
 const prtCode = document.querySelector('.parent-code');
 const childCode = document.querySelectorAll('.code');  
 const codes = quiz.querySelectorAll('textarea'); 
-const [ imgSize, codeReset, runCode ] = document.querySelectorAll('.btn-area button');
+const runCode = document.querySelector('.btn-run');
+const imgSize = document.querySelector('.btn-size');
+const codeReset = document.querySelector('.btn-reset'); 
 
  
 imgSize.addEventListener('click', imgSizeToggle );
 codeReset.addEventListener('click', resetFlex);
 runCode.addEventListener('click', getCode);
+ 
 
 function imgSizeToggle(e) { 
     parent.classList.toggle('size');
