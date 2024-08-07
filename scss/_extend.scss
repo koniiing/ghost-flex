@@ -1,0 +1,50 @@
+// ----------------- placeholder selector 
+%base {
+    width:100%;
+    max-width:1280px;
+    margin:0 auto;
+    padding:2rem 3rem; 
+}
+
+%text-lg {
+    @include remFont(lg, 500);
+}
+%text-md {
+    @include remFont(md, 500);
+}
+%text-sm {
+    @include remFont(sm);
+}
+
+// ---------------- Responsible
+
+@include media($max) {
+    %base {
+        max-width:none;
+        // background-color:red;
+    }
+}
+
+
+@include media($pc) {
+
+} 
+
+@include media($tablet) {
+    %text-lg {
+        @include remFont(lg-down, 500);
+    }
+    %text-md {
+        @include remFont(md-down, 500);
+    }
+    %text-sm { 
+        @include remFont(sm-down, 300);
+    }
+} 
+
+@include media($mobile) {
+    %base {
+        padding:rem(20);
+    }
+
+}

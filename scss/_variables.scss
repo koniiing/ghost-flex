@@ -1,0 +1,45 @@
+$url : '../images/'; 
+
+:root {
+    --scroll : 0;
+}
+
+// ---------------- colors
+$body : (
+    bg : #222,
+    text : #fff
+);
+ 
+$primary : #ca2836;
+$sub : #2d6ad4;
+$line : rgba(#fff, 0.4);
+$radius : 5px;
+
+// ----------------- breakpoint
+$max : 1280px;
+$pc : 1024px;
+$tablet : 960px;
+$break : 720px;
+$mobile : 480px; 
+$min : 360px; 
+
+// 글자 사이즈 지정
+$font : (
+    lg : 48,
+    lg-down : 32,
+    md : 24,
+    md-down : 20,
+    sm : 20,
+    sm-down : 18,
+);
+ 
+// 폼필드 요소들의 높이 지정
+$formBox : (
+    lg: 56px,
+    md : 32px,  
+);
+ 
+ 
+
+
+

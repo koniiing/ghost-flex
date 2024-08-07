@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: coding-ghost-flex ::</title>
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+    <div class="all-wrap default"> 
+        <div class="quiz-container">
+            <header>
+                <h1>coding-ghost-flex</h1>
+                <div class="btn-area">
+                    <button type="button" class="btn-size size">높이고정</button>
+                    <button type="button" class="btn-reset">RESET</button>
+                    <button type="button" class="btn-run">RUN</button>
+                </div>
+            </header>
+            <ol class="description">
+                <li>align-items:stretch가 기본값이라서 크기가없는 div는 부모의 높이만큼 늘어난다.</li>
+                <li>아이템은 height:100px 설정되어있다. 위에서 '높이고정'버튼으로 적용/해제 가능</li>
+                <li>종료방법 : Cmd + Q 또는 상단 메뉴에서 GhostFlex > Quit 선택</li>
+            </ol>
+            <main class="code-container">
+<div class="parent-container">
+    <pre><code>
+.container {
+              display:flex;
+    </code></pre>
+    <textarea class="parent-code" data-code="flex-box"></textarea> 
+    <pre>
+        <code>
+            }
+        </code>
+    </pre>
+    
+</div>
+<div class="child">
+    <pre><code>
+.n1         {
+    </code></pre>
+    <textarea class="code" data-code="flex-item"></textarea>
+    <pre><code>
+            }
+    </code></pre>
+</div>
+<div class="child">
+    <pre><code>
+.n2         {
+    </code></pre>
+    <textarea class="code" data-code="flex-item"></textarea>
+    <pre><code>
+            }
+    </code></pre>
+</div>
+<div class="child">
+    <pre><code>
+.n3         {
+    </code></pre>
+    <textarea class="code" data-code="flex-item"></textarea>
+    <pre><code>
+            }
+    </code></pre>
+</div>
+<div class="child">
+    <pre><code>
+.n4         {
+    </code></pre>
+    <textarea class="code" data-code="flex-item"></textarea>
+    <pre><code>
+            }
+    </code></pre>
+</div>
+             </main>
+             <footer>
+                <p>created by coding-ghost <a href="https://www.youtube.com/@codingghost941" target="_blank">Youtube</a></p>
+             </footer>
+        </div>
+        
+        <section class="view-container size">
+            <img src="./images/ghost_n1.png" alt="ghost" class="item">
+            <img src="./images/ghost_n2.png" alt="ghost" class="item">
+            <img src="./images/ghost_n3.png" alt="ghost" class="item"> 
+            <div class="item">
+                DIV
+            </div>
+        </section>
+    </div>
+
+    <div class="hint-code" data-code="flex-box">
+        <h2>Description for Flex-box</h2>
+        <ul>
+            <li>justify-content:메인축으로의 정렬;</li>
+            <li>align-items:반대축방향의 정렬(반대축으로의 아이템이 1줄일때)</li>
+            <li>align-centent:반대축방향의 정렬(반대축으로의 아이템이 2줄이상일때)<br>
+                -> flex-wrap:wrap으로 설정되어있어야 가능하다.</li>
+        </ul>
+
+        <ul>
+            <li>flex-flow: 아래 2개의 속성을 축약해서 쓰는 축약형이다.</li>
+            <li>- flex-direction:플렉스의 메인축 방향 지정(기본:row)</li>
+            <li>- flex-wrap:아이템들의 줄바꿈 허용여부(기본:nowrap)</li>
+        </ul>
+
+        <ul>
+            <li>gap : 아이템들의 사이간격지정 축약형</li>
+            <li>- row-gap : 행의 간격</li>
+            <li>- column-gap : 열의 간격</li>
+        </ul> 
+    </div>
+    <div class="hint-code" data-code="flex-item">
+        <h2>Description for Flex-items</h2>
+        <ul>
+            <li>flex:grow shrink basis;</li>
+            <li>flex-grow:늘어나는 비율(기본:0)</li>
+            <li>flex-shrink:줄어드는 비율(기본 : 1) </li>
+            <li>flex-basis:메인축으로의 크기</li>
+            <li>align-self:반대축으로의 정렬</li>
+        </ul> 
+    </div>
+ 
+    <script src="ghost_flex.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@use 'sass:math';
+
+.all-wrap {
+    @include posFull(fixed, #2a3572); 
+    @include flex(2, 20px, $a:stretch);
+    line-height:1;
+    padding:30px;
+
+    header {
+        @include flex;
+    }
+    .quiz-container {
+        @include flex($gap:20px, $flow:column, $a:stretch);
+        .code-container {
+            flex-grow:1;
+            border:1px solid rgba(white, 0.5);
+            padding:20px; 
+        }
+    }
+
+    .view-container  {
+        border:3px solid gold; 
+        display:flex;
+ 
+        div {
+            background-color:rgb(71, 79, 122); 
+        }
+
+        &.size .item {
+            height:100px;
+        } 
+    }
+}
+
+// theme setting
+.all-wrap {
+   &.default {
+        background-color:#2a3572;
+        .view-container {
+            border-color:gold;
+        }
+   }
+
+   &.dark {
+        background-color:#222;
+        .view-container {
+            border-color:#5a5493;
+        }
+   }
+
+   &.light {
+        background-color:#f5f5f5;
+        color:#1b1b1b;
+        .view-container {
+            border-color:#d8d8d8;
+        }
+   }
+}
+
+.description {
+    line-height:1.4;
+    font-size:0.875rem;
+}
+.btn-area {
+    @include flex($gap:10px);
+    button {
+        height:32px;
+        border-radius:3px;
+        padding:0 20px;
+        &:hover {
+            opacity:0.7;
+        }
+    }
+    
+    .btn-run {
+        background-color:#ff1356;
+        padding:0 30px;
+    }
+    .btn-reset {
+        background-color:#796c9f;
+    }
+    .btn-size {
+        background-color:#555;
+        &:after {
+            content:'✕'; 
+            margin-left:5px;
+        }
+        &.size {
+            background-color:#30584e;
+            &:after {
+                content:'✓'; 
+            }
+        }
+    }
+}
+
+ 
+
+.code, .parent-code {
+    resize:none;
+    border:1px solid #fff;
+    display:block;
+    margin-left:100px;
+    border-radius:3px;
+    min-width:300px;
+    overflow:auto;
+    padding:10px;
+}
+
+.parent .code {
+    height:100px; 
+}
+
+.child .code {
+    height:50px;
+}
+
+
+.hint-code {
+    position:fixed;
+    top:50%;
+    left:470px;
+    transform:translateY(-50%);
+    display:none;
+    background-color:rgba(white,0.7); 
+    color:#222;
+    border-radius:20px;
+    padding:20px 30px;
+    border:1px solid #fff;
+
+    h2 {
+        font-weight:600;
+        font-size:1.2rem;
+        color:#2a3572;
+    }
+
+    ul {
+        font-family: monospace;
+    }
+}
