@@ -1,79 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>:: coding-ghost-flex ::</title>
     <link rel="stylesheet" href="./css/common.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKMS7LGX41"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PKMS7LGX41');
+    </script>
 </head>
+
 <body>
-    <div class="all-wrap default"> 
+    <div class="all-wrap default">
         <div class="quiz-container">
             <header>
-                <h1>PLAYGROUND - FLEX</h1> 
-                <div class="btn-area"> 
+                <h1>PLAYGROUND - FLEX</h1>
+                <div class="btn-area">
                     <button type="button" class="btn-run">RUN</button>
                 </div>
             </header>
             <ol class="description">
                 <li class="warn">해상도 1000 x 600 이상에서 사용하세요(모바일 사용불가)</li>
                 <li>align-items:stretch가 기본값이라서 크기가 없는 item은 부모의 높이만큼 늘어난다.</li>
-                <li>item은 height:100px 설정되어있다. 위에서 '높이고정'버튼으로 적용/해제 가능</li> 
+                <li>item은 height:100px 설정되어있다. 위에서 '높이고정'버튼으로 적용/해제 가능</li>
             </ol>
             <main class="code-container">
-<div class="parent-container">
-    <pre><code>
+                <div class="parent-container">
+                    <pre><code>
 .container {
               display:flex;
     </code></pre>
-    <textarea class="parent-code" data-code="flex-box"></textarea> 
-    <pre>
+                    <textarea class="parent-code" data-code="flex-box"></textarea>
+                    <pre>
         <code>
             }
         </code>
     </pre>
-    
-</div>
-<div class="child">
-    <pre><code>
+
+                </div>
+                <div class="child">
+                    <pre><code>
 .n1         {
     </code></pre>
-    <textarea class="code" data-code="flex-item"></textarea>
-    <pre><code>
+                    <textarea class="code" data-code="flex-item"></textarea>
+                    <pre><code>
             }
     </code></pre>
-</div>
-<div class="child">
-    <pre><code>
+                </div>
+                <div class="child">
+                    <pre><code>
 .n2         {
     </code></pre>
-    <textarea class="code" data-code="flex-item"></textarea>
-    <pre><code>
+                    <textarea class="code" data-code="flex-item"></textarea>
+                    <pre><code>
             }
     </code></pre>
-</div>
-<div class="child">
-    <pre><code>
+                </div>
+                <div class="child">
+                    <pre><code>
 .n3         {
     </code></pre>
-    <textarea class="code" data-code="flex-item"></textarea>
-    <pre><code>
+                    <textarea class="code" data-code="flex-item"></textarea>
+                    <pre><code>
             }
     </code></pre>
-</div>
-<div class="child">
-    <pre><code>
+                </div>
+                <div class="child">
+                    <pre><code>
 .n4         {
     </code></pre>
-    <textarea class="code" data-code="flex-item"></textarea>
-    <pre><code>
+                    <textarea class="code" data-code="flex-item"></textarea>
+                    <pre><code>
             }
     </code></pre>
-</div>
-             </main>
-             <footer>
-                <p>created by <a href="https://www.youtube.com/@codingghost941" target="_blank"><strong class="logo">coding-ghost</strong> Youtube</a></p>
-             </footer>
+                </div>
+            </main>
+            <footer>
+                <p>created by <a href="https://www.youtube.com/@codingghost941" target="_blank"><strong
+                            class="logo">coding-ghost</strong> Youtube</a></p>
+            </footer>
         </div>
 
         <div class="right-container">
@@ -85,9 +97,9 @@
             <section class="view-container size">
                 <img src="./images/ghost_n1.png" alt="ghost" class="item">
                 <img src="./images/ghost_n2.png" alt="ghost" class="item">
-                <img src="./images/ghost_n3.png" alt="ghost" class="item"> 
-                <img src="./images/ghost_n4.png" alt="ghost" class="item">  
-            </section> 
+                <img src="./images/ghost_n3.png" alt="ghost" class="item">
+                <img src="./images/ghost_n4.png" alt="ghost" class="item">
+            </section>
         </div>
     </div>
 
@@ -110,7 +122,7 @@
             <li>gap : 아이템들의 사이간격지정 축약형</li>
             <li>- row-gap : 행의 간격</li>
             <li>- column-gap : 열의 간격</li>
-        </ul> 
+        </ul>
     </div>
     <div class="hint-code" data-code="flex-item">
         <h2>Description for Flex-items</h2>
@@ -120,9 +132,10 @@
             <li>flex-shrink:줄어드는 비율(기본 : 1) </li>
             <li>flex-basis:메인축으로의 크기</li>
             <li>align-self:반대축으로의 정렬</li>
-        </ul> 
+        </ul>
     </div>
- 
+
     <script src="ghost_flex.js"></script>
 </body>
+
 </html>
